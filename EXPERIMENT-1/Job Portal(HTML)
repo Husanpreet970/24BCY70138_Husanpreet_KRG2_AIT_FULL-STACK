@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+</head>
+<body>
+<header>
+    <h1>Simple Job Portal</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+<div class="hero">
+    <h2>Find Your Dream Job</h2>
+    <p>Search jobs by title and location</p>
+    <input type="text" placeholder="Job title">
+    <input type="text" placeholder="Location">
+    <button>Search</button>
+</div>
+<div class="wrapper">
+    <section>
+        <h2>Available Jobs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Apply</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Frontend Developer</td>
+                    <td>TechSoft</td>
+                    <td>Remote</td>
+                    <td><button>Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Backend Developer</td>
+                    <td>CodeHub</td>
+                    <td>Delhi</td>
+                    <td><button>Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Data Analyst</td>
+                    <td>DataCorp</td>
+                    <td>Bangalore</td>
+                    <td><button>Apply</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Job Seeker Registration</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+            <label>Select City:</label>
+            <select>
+                <option>Delhi</option>
+                <option>Chandigarh</option>
+                <option>Lucknow</option>
+                <option>Ambala</option>
+            </select>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2026 Simple Job Portal | Fresher Project</p>
+</footer>
+</body>
+</html>
