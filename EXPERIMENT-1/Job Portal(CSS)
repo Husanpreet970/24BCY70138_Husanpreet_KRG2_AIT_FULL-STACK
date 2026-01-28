@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #f2f2f2;
+            color: #333333;
+        }
+        header{
+            background-color: #1e88e5;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        header h1{
+            margin-bottom:8px;
+        }
+        nav a{
+            color:white;
+            margin:0 10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .hero{
+            padding:30px 15px;
+            text-align:center;
+            background-color:#e3f2fd;
+        }
+        .hero h2{
+            margin-bottom:8px;
+        }
+        .hero p{
+            margin-bottom:15px;
+        }
+        .hero input{
+            padding:8px;
+            width:180px;
+            margin:5px;
+        }
+        .hero button{
+            padding:8px 15px;
+            background-color:#1e88e5;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        .hero button:hover{
+            background-color:#1565c0;
+        }
+        .wrapper{
+            max-width:1000px;
+            margin:20px auto;
+            padding:0 10px;
+        }
+        section{
+            margin-bottom:25px;
+        }
+        section h2{
+            margin-bottom:10px;
+            text-align:left;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background-color:white;
+        }
+        table, th, td{
+            border:1px solid #cccccc;
+        }
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+        th{
+            background-color:#bbdefb;
+        }
+        tr:nth-child(even){
+            background-color:#f9f9f9;
+        }
+        tr:hover{
+            background-color:#e3f2fd;
+        }
+        button.apply-btn{
+            padding:5px 12px;
+            background-color:#1e88e5;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        button.apply-btn:hover{
+            background-color:#1565c0;
+        }
+        form{
+            background-color:white;
+            border:1px solid #cccccc;
+            padding:15px;
+        }
+        form label{
+            display:block;
+            margin-top:10px;
+            margin-bottom:4px;
+        }
+        form input, form select{
+            width:100%;
+            padding:8px;
+            margin-bottom:8px;
+            border:1px solid #cccccc;
+        }
+        input[type="submit"]{
+            width:40%;
+            background-color:#1e88e5;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        input[type="submit"]:hover{
+            background-color:#1565c0;
+        }
+        footer{
+            background-color:#0d47a1;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:20px;
+        }
+        @media (max-width:600px){
+            .hero input{
+                width:90%;
+                max-width:250px;
+            }
+            input[type="submit"]{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Simple Job Portal</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+<div class="hero">
+    <h2>Find Your Dream Job</h2>
+    <p>Search jobs by title and location</p>
+    <input type="text" placeholder="Job title">
+    <input type="text" placeholder="Location">
+    <button>Search</button>
+</div>
+<div class="wrapper">
+    <section>
+        <h2>Available Jobs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Apply</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Frontend Developer</td>
+                    <td>TechSoft</td>
+                    <td>Remote</td>
+                    <td><button class="apply-btn">Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Backend Developer</td>
+                    <td>CodeHub</td>
+                    <td>Delhi</td>
+                    <td><button class="apply-btn">Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Data Analyst</td>
+                    <td>DataCorp</td>
+                    <td>Bangalore</td>
+                    <td><button class="apply-btn">Apply</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Job Seeker Registration</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+            <label>Select City:</label>
+            <select>
+                <option>Delhi</option>
+                <option>Chandigarh</option>
+                <option>Lucknow</option>
+                <option>Ambala</option>
+            </select>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2026 Simple Job Portal | Fresher Project</p>
+</footer>
+</body>
+</html>
